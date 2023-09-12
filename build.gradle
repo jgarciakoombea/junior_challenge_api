@@ -2,12 +2,9 @@ plugins {
     id 'java'
 }
 
-ext {
-    karateVersion = '1.4.0'
-}
-
 dependencies {
-    testImplementation "com.intuit.karate:karate-junit5:${karateVersion}"
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.0'
+    testImplementation 'com.intuit.karate:karate-apache:0.9.6'
 }
 
 test {
@@ -19,5 +16,6 @@ test {
 
 repositories {
     mavenCentral()
+    jcenter()
     // mavenLocal()
 }
